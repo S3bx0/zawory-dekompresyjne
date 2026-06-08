@@ -58,7 +58,7 @@ $$
 
 | Typ zaworu | Przepływ [l/min] |
 |-----------|-----------------|
-| Maxi Elebar (stropowy) | 4 300 |
+| Maxi Elebar (ścienny) | 4 300 |
 | Maxi Elebar EVO-VERTICAL (stropowy) | 1 430 |
 
 ---
