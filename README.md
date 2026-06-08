@@ -1,7 +1,7 @@
 # Kalkulator Zaworów Dekompresyjnych — SM
 
 Narzędzie inżynierskie do obliczania wymaganej liczby zaworów dekompresyjnych
-w komorach chłodniczych zgodnie z wzorami branżowymi.
+w komorach mroźniczych zgodnie z wzorami branżowymi.
 
 ## Spis treści
 
@@ -22,7 +22,7 @@ w komorach chłodniczych zgodnie z wzorami branżowymi.
 ## Opis działania
 
 Program oblicza liczbę zaworów dekompresyjnych potrzebnych do wyrównania ciśnienia
-w komorze chłodniczej wywołanego gwałtownym spadkiem temperatury (praca agregatu
+w komorze mroźniczej wywołanego gwałtownym spadkiem temperatury (praca agregatu
 chłodniczego). Wynik jest zaokrąglany w górę do pełnej liczby całkowitej.
 
 ---
