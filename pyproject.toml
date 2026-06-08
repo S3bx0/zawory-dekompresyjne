@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zawory-dekompresyjne"
+version = "1.0.0"
+description = "Kalkulator doboru zaworów dekompresyjnych dla komór chłodniczych (MD-Puch Sp. z o.o.)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Proprietary" }
+authors = [
+    { name = "Sebastian Milczarek", email = "sebastian.milczarek@md-puch.pl" },
+]
+keywords = ["HVAC", "chłodnictwo", "zawory dekompresyjne", "Maxi Elebar"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Win32 (MS Windows)",
+    "Intended Audience :: Manufacturing",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+]
+dependencies = [
+    "ttkbootstrap>=1.10,<2.0",
+    "reportlab>=4.0,<5.0",
+    "pypdf[crypto]>=4.0,<6.0",
+    "cryptography>=3.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0,<9.0",
+    "pytest-cov>=4.0",
+]
+build = [
+    "pyinstaller>=6.0,<7.0",
+]
+
+[project.scripts]
+zawory-dekompresyjne-cli = "gui:main"
+
+[project.gui-scripts]
+zawory-dekompresyjne = "gui:main"
+
+[project.urls]
+Homepage = "https://md-puch.pl"
+
+# ── setuptools layout (projekt płaski, bez src/) ─────────────────────────
+[tool.setuptools]
+py-modules = ["gui", "obliczenia", "pdf_service", "validation"]
+
+[tool.setuptools.package-data]
+"*" = ["resources/*.ttf", "resources/*.png", "resources/*.TIF"]
+
+# ── pytest ────────────────────────────────────────────────────────────────
+[tool.pytest.ini_options]
+minversion = "7.0"
+testpaths = ["."]
+python_files = ["test_*.py"]
+addopts = "-q --strict-markers"
+filterwarnings = [
+    "ignore::UserWarning:pdf_service",
+]
