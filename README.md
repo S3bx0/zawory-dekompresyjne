@@ -1,4 +1,4 @@
-# Kalkulator Zaworów Dekompresyjnych — MD-Puch
+# Kalkulator Zaworów Dekompresyjnych — SM
 
 Narzędzie inżynierskie do obliczania wymaganej liczby zaworów dekompresyjnych
 w komorach chłodniczych zgodnie z wzorami branżowymi.
