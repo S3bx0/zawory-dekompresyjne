@@ -215,4 +215,4 @@ niż niedomiarować.
 
 ---
 
-*Autor: Sebastian Milczarek · MD-Puch Sp. z o.o.*
+*Autor: Sebastian Milczarek
